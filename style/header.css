@@ -1,0 +1,108 @@
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul li a {
+  border: 2px solid #0000ff;
+  border-radius: 20px;
+  padding: 0;
+  margin: 0px 10px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+  background-color: #555;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.about-me-text {
+  background-color: #0000ff;
+}
+
+@media (max-width: 770px) {
+  .nav-toggle {
+    display: block;
+    margin: 0;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu li a {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .nav-container input[type="checkbox"]:checked~.nav-menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
