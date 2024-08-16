@@ -1,0 +1,22 @@
+.skills-and-expert {
+  margin: 0;
+  background-color: #333;
+  padding-bottom: 300px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #f2f2f2;
+  padding: 20px;
+}
+
+.btn-group {
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 50%;
+}

@@ -1,0 +1,25 @@
+.contact {
+  padding-bottom: 300px;
+  background-color: #333;
+  opacity: 0.8;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a img {
+  width: 35px;
+  padding: 0;
+  margin: 0 30px;
+}
